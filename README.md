@@ -4,34 +4,33 @@
 
 ![Status](https://img.shields.io/badge/Status-Research_Phase-blue) ![Language](https://img.shields.io/badge/Language-Python_3.10-green) ![Focus](https://img.shields.io/badge/Focus-AI_Security-red)
 
-## 📌 Project Overview
-**LLM Persona-Bias Analysis** is a research project dedicated to investigating the vulnerability of Large Language Models (LLMs) to **Persona-based Attacks**. 
-Unlike traditional adversarial attacks that use gibberish or complex algorithms, this project focuses on **Social Engineering**: forcing the model to adopt specific roles (e.g., "The Developer," "The Grandmother," "The Victim") to bypass Safety Guardrails.
+📌 Обзор проекта
 
-The goal is to statistically measure how different "Personas" affect the **Attack Success Rate (ASR)** on restricted topics.
+LLM Persona-Bias Analysis - это исследовательский проект, посвященный исследованию уязвимости больших языковых моделей (LLM) для атак на основе персон. В отличие от традиционных враждебных атак, которые используют тарабарщину или сложные алгоритмы, этот проект фокусируется на социальной инженерии: заставляя модель принимать определенные роли (например, «Разработчик», «Бабушка», «Жертва»), чтобы обойти ограждения безопасности.
+Цель состоит в том, чтобы статистически оценить, как различные "Персоны" влияют на уровень успеха атаки (ASR) по ограниченным темам.
+🎯 Цели
 
-## 🎯 Objectives
-1.  **Library Creation:** Build a dataset of 20+ System Prompts representing various social roles.
-2.  **Automated Testing:** Develop a pipeline to test 100+ unsafe queries (from AdvBench) against these personas.
-3.  **Analysis:** Generate a "Vulnerability Heatmap" showing which roles are most dangerous for AI safety.
+Создание библиотеки: Создайте набор данных из 20+ системных подсказок, представляющих различные социальные роли.
+Автоматизированное тестирование: Разработайте конвейер для тестирования более 100 небезопасных запросов (от AdvBench) против этих персон.
+Анализ: Создайте «Нагревую карту уязвимости», показывающую, какие роли наиболее опасны для безопасности ИИ.
+🛠 Методология
 
-## 🛠 Methodology
-The research follows a Black-Box approach:
-1.  **Input:** Malicious query (e.g., "How to bypass firewall").
-2.  **Wrapper:** The query is wrapped into a specific Persona Context.
-3.  **Inference:** Request sent to target models (GPT-4o, Llama-3, etc.).
-4.  **Evaluation:** Automatic classification of the response (Refusal vs. Jailbreak).
+Исследование следует подходу Black-Box:
+Ввод: Вредоносный запрос (например, "Как обойти брандмауэр").
+Wrapper: Запрос заворачивается в определенный контекст Persona.
+Вывод: Запрос отправлен целевым моделям (GPT-4o, Llama-3 и т. д.).
+Оценка: Автоматическая классификация ответа (отказ против джейлбрейка).
+📂 Структура проекта
 
-## 📂 Project Structure
-* `src/` - Source code for the attack pipeline.
-* `data/` - Datasets (Personas, AdvBench subset).
-* `notebooks/` - Jupyter notebooks for data analysis and visualization.
-* `results/` - Logs and Heatmaps.
+src/- Исходный код для конвейера атак.
+data/- Наборы данных (Personas, подмножество AdvBench).
+notebooks/- Блокноты Jupyter для анализа и визуализации данных.
+results/- Журналы и тепловые карты.
+🚀 Дорожная карта
 
-## 🚀 Roadmap
-- [x] **Checkpoint 1 (Jan 30):** Topic approval, architecture design, repository setup.
-- [ ] **Checkpoint 2 (Feb 03):** Baseline script implementation, first successful manual jailbreaks.
-- [ ] **Checkpoint 3 (Final):** Full automated pipeline, comparative analysis, final report.
+Контрольный пункт 1 (30 янв: Утверждение темы, дизайн архитектуры, настройка репозитория.
+Контрольная точка 2 (03 февраля): Базовая реализация сценария, первые успешные ручные джейлбрейки.
+Контрольная точка 3 (финальная): полностью автоматизированная конвейерная, сравнительный анализ, окончательный отчет.
+👤 Автор
 
-## 👤 Author
-* **Sergey** - *Lead Researcher*
+Сергей - Ведущий исследователь
